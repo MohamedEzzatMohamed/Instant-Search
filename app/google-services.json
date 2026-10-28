@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "669637527421",
+    "project_id": "personal-projects-d8924",
+    "storage_bucket": "personal-projects-d8924.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669637527421:android:bb74d55c0e9dfab8e1ee14",
+        "android_client_info": {
+          "package_name": "com.madarsofttask"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWVJubyQbg5HdpPKkovSZ6WdCv9md117s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669637527421:android:5040bef37d4c968fe1ee14",
+        "android_client_info": {
+          "package_name": "com.mezzat.instantsearch"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWVJubyQbg5HdpPKkovSZ6WdCv9md117s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669637527421:android:f322089cc17f1f25e1ee14",
+        "android_client_info": {
+          "package_name": "com.mezzat.instantsearch.dev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWVJubyQbg5HdpPKkovSZ6WdCv9md117s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

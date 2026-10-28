@@ -91,6 +91,7 @@ fun SearchScreenContent(
                 Column(
                     modifier = Modifier
                         .fillMaxWidth()
+                        .padding(start = 0.dp, end = 0.dp, top = 32.dp, bottom = 0.dp)
                         .padding(horizontal = 16.dp, vertical = 12.dp)
                 ) {
                     Text(

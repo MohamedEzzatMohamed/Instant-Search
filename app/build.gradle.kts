@@ -1,7 +1,11 @@
+import com.google.firebase.appdistribution.gradle.firebaseAppDistribution
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.google.firebase.appdistribution)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
@@ -48,12 +52,21 @@ android {
             resValue("string", "app_name", "Instant Search Dev")
             buildConfigField("String", "BASE_URL", "\"https://rickandmortyapi.com/api/character/\"")
             buildConfigField("String", "ENV_NAME", "\"development\"")
+//            firebaseAppDistribution {
+//                releaseNotes="Release notes for dev version"
+//                testers="zonesmart630@gmail.com"
+//            }
         }
         create("prod") {
             dimension = "environment"
             resValue("string", "app_name", "Instant Search")
             buildConfigField("String", "BASE_URL", "\"https://rickandmortyapi.com/api/character/\"")
             buildConfigField("String", "ENV_NAME", "\"production\"")
+//            firebaseAppDistribution {
+//                artifactType = "APK"
+//                releaseNotesFile = "/path/to/releasenotes.txt"
+//                testers = "zonesmart630@gmail.com"
+//            }
         }
     }
 }
