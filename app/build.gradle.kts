@@ -20,8 +20,8 @@ android {
         applicationId = "com.mezzat.instantsearch"
         minSdk = 26
         targetSdk = 36
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.0.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -52,21 +52,21 @@ android {
             resValue("string", "app_name", "Instant Search Dev")
             buildConfigField("String", "BASE_URL", "\"https://rickandmortyapi.com/api/character/\"")
             buildConfigField("String", "ENV_NAME", "\"development\"")
-//            firebaseAppDistribution {
-//                releaseNotes="Release notes for dev version"
-//                testers="zonesmart630@gmail.com"
-//            }
+            firebaseAppDistribution {
+                releaseNotes="Release notes for dev version"
+                testers="zonesmart630@gmail.com"
+            }
         }
         create("prod") {
             dimension = "environment"
             resValue("string", "app_name", "Instant Search")
             buildConfigField("String", "BASE_URL", "\"https://rickandmortyapi.com/api/character/\"")
             buildConfigField("String", "ENV_NAME", "\"production\"")
-//            firebaseAppDistribution {
-//                artifactType = "APK"
-//                releaseNotesFile = "/path/to/releasenotes.txt"
-//                testers = "zonesmart630@gmail.com"
-//            }
+            firebaseAppDistribution {
+                artifactType = "APK"
+                releaseNotesFile = "/path/to/releasenotes.txt"
+                testers = "zonesmart630@gmail.com"
+            }
         }
     }
 }
