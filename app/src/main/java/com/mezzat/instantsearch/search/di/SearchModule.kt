@@ -1,5 +1,6 @@
 package com.mezzat.instantsearch.search.di
 
+import com.mezzat.instantsearch.BuildConfig
 import com.mezzat.instantsearch.search.data.repository.SearchCharactersRepositoryImpl
 import com.mezzat.instantsearch.search.domain.repository.SearchCharactersRepository
 import com.mezzat.instantsearch.search.domain.usecase.SearchCharactersUseCase
@@ -15,7 +16,7 @@ import org.koin.dsl.module
 val searchModule = module {
     single<HttpClient> {
         HttpClientFactory.create(
-            baseUrl = "https://rickandmortyapi.com/api/"
+            baseUrl = BuildConfig.BASE_URL
         )
     }
 
