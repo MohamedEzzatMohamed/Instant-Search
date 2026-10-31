@@ -3,7 +3,7 @@ name: Deploy Production to Firebase App Distribution
 on:
   push:
     branches:
-      - dev # أو الفرع المعتمد لديك
+      - dev
 
 jobs:
   deploy-prod:
