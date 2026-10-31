@@ -1,15 +1,75 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# =========================================================================
+# Android & Gradle Build Artifacts
+# =========================================================================
+/build/
+**/build/
+.gradle/
+**/.gradle/
+/captures/
+.externalNativeBuild/
+.cxx/
+
+# Compiled outputs & Binaries
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+*.aar
+*.dm
+output-metadata.json
+/app/prod/release/
+
+# Kept wrapper JAR
+!gradle/wrapper/gradle-wrapper.jar
+
+# =========================================================================
+# Security & Secret Files (DO NOT COMMIT TO PUBLIC REPO)
+# =========================================================================
 local.properties
+**/local.properties
+secrets.properties
+secure.properties
+*.env
+.env*
+release-notes.txt
+
+# Firebase / Google Services configuration
+google-services.json
+GoogleService-Info.plist
+firebase.json
+
+# Signing Keystores & Private Certificates
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+*.pepk
+*.pks
+*.crt
+*.der
+
+# =========================================================================
+# Android Studio / IntelliJ IDE Files
+# =========================================================================
+.idea/
+*.iml
+*.ipr
+*.iws
+.kotlin/
+.navigation/
+
+# =========================================================================
+# OS & System Files
+# =========================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Log files
+*.log
